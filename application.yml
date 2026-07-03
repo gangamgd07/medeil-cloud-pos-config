@@ -1,3 +1,10 @@
-spring:
-  application:
-    name: common-config
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
