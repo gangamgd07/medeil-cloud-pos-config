@@ -22,7 +22,7 @@ server:
   port: 8082
 
 jwt:
-  secret : pharmacyCloudSecretKeyForJwtAuthentication2026
+  secret : pharmacyCloudSecretKeyForJwtAuthentication2026VeryStrongKey123
   access-expiration: 900000        # 15 mins
   refresh-expiration: 604800000    # 7 days
 
