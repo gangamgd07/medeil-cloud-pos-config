@@ -28,6 +28,6 @@ management:
     web:
       exposure:
         include: "*"
-        
+
 jwt:
-  secret: pharmacyCloudSecretKeyForJwtAuthentication2026
+  secret: pharmacyCloudSecretKeyForJwtAuthentication2026VeryStrongKey123
