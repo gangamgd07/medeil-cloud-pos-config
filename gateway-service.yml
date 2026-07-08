@@ -4,17 +4,19 @@ server:
 spring:
   cloud:
     gateway:
-      routes:
+      server:
+        webflux:
+          routes:
 
-        - id: authentication-service
-          uri: lb://AUTHENTICATION-SERVICE
-          predicates:
-            - Path=/api/auth/**
+            - id: authentication-service
+              uri: lb://AUTHENTICATION-SERVICE
+              predicates:
+                - Path=/api/auth/**
 
-        - id: product-service
-          uri: lb://PRODUCT-SERVICE
-          predicates:
-            - Path=/api/products/**
+            - id: product-service
+              uri: lb://PRODUCT-SERVICE
+              predicates:
+                - Path=/api/products/**
 
 eureka:
   client:
